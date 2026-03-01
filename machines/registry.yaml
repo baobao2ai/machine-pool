@@ -29,6 +29,32 @@ machines:
       country: US
     notes: "Primary GPU box. Running flux-girl, home-monitor."
 
+  - id: minipc
+    label: "Mini PC — AMD Ryzen 9 7940HS"
+    host: 172.28.195.237
+    user: openclaw2
+    ssh_key: ~/.ssh/id_machine_pool
+    sudo: true
+    enabled: true
+    tags:
+      - cpu
+      - amd
+      - home
+      - igpu
+      - lightweight
+      - crawling
+    specs:
+      gpu: "AMD Radeon 780M (integrated)"
+      vram_gb: 0
+      cpu_cores: 16
+      ram_gb: 29
+      storage_gb: 466
+      os: linux
+    location:
+      region: home
+      country: US
+    notes: "AMD Ryzen 9 7940HS, 16-core, 29GB RAM, 466GB NVMe. No discrete GPU. 120Mbps WAN. Connected via ZeroTier (172.28.195.237). Good for CPU tasks, crawling, data processing."
+
   # Template for adding more machines:
   # - id: cloud-a100
   #   label: "Cloud GPU — A100"

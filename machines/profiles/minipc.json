@@ -1,0 +1,43 @@
+{
+  "profiled_at": "2026-03-01T22:30:16Z",
+  "hostname": "minipc",
+  "os": "Ubuntu 24.04.4 LTS",
+  "kernel": "6.17.0-14-generic",
+  "arch": "x86_64",
+  "cpu": {
+    "model": "AMD Ryzen 9 7940HS w/ Radeon 780M Graphics",
+    "cores": 16,
+    "threads": 16,
+    "mhz": "2320"
+  },
+  "memory": {
+    "ram_gb": 29.1,
+    "swap_gb": 7.9
+  },
+  "storage": {
+    "root_total_gb": 466,
+    "root_used_gb": 15,
+    "root_free_gb": 427,
+    "block_devices": "nvme0n1 476.9G disk KINGSTON OM8PGP4512Q-A0"
+  },
+  "gpu": {
+    "count": 0,
+    "info": "c4:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Phoenix1 (rev c1)"
+  },
+  "network": {
+    "interfaces": "enp1s0,wlp2s0,ztzlgdrfdw,",
+    "ips": "wlp2s0=192.168.4.177/22,ztzlgdrfdw=172.28.195.237/16,",
+    "ping_wan_ms": "19.027",
+    "dns_latency_ms": "1",
+    "download_mbps": "133.6"
+  },
+  "ssh": {
+    "pubkey_auth": "yes",
+    "password_auth": "no
+no"
+  },
+  "system": {
+    "uptime": "up 40 minutes",
+    "load_avg": "0.50 0.32 0.15"
+  }
+}
