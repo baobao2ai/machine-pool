@@ -1,0 +1,51 @@
+# Machine Pool Registry
+# Each machine entry describes its identity, access, specs, and tags.
+# Tags drive dispatcher routing — add any tags that describe what the machine is good for.
+
+machines:
+
+  - id: home-4090
+    label: "Home workstation — RTX 4090"
+    host: localhost          # this machine itself
+    user: openclaw
+    ssh_key: null            # null = local execution
+    sudo: true
+    enabled: true
+    tags:
+      - gpu
+      - high-vram
+      - home
+      - image-gen
+      - training
+    specs:
+      gpu: "RTX 4090"
+      vram_gb: 24
+      cpu_cores: 16          # update with actual
+      ram_gb: 64             # update with actual
+      storage_gb: 2000       # update with actual
+      os: linux
+    location:
+      region: home
+      country: US
+    notes: "Primary GPU box. Running flux-girl, home-monitor."
+
+  # Template for adding more machines:
+  # - id: cloud-a100
+  #   label: "Cloud GPU — A100"
+  #   host: 1.2.3.4
+  #   user: ubuntu
+  #   ssh_key: ~/.ssh/id_rsa_cloud
+  #   sudo: true
+  #   enabled: false
+  #   tags: [gpu, high-vram, cloud, training]
+  #   specs:
+  #     gpu: "A100"
+  #     vram_gb: 80
+  #     cpu_cores: 32
+  #     ram_gb: 256
+  #     storage_gb: 500
+  #     os: linux
+  #   location:
+  #     region: us-east
+  #     country: US
+  #   notes: "Cloud training box."
